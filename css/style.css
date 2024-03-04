@@ -1,0 +1,89 @@
+@import url(variables.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body {
+    background: var(--color-primary);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: 
+    " menu menu menu menu menu menu menu menu menu menu menu menu "
+    " noti noti noti noti vnts vnts vnts vnts vnts vnts blnc blnc"
+    " noti noti noti noti vnts vnts vnts vnts vnts vnts blnc blnc"
+    " weak weak weak weak vnts vnts vnts vnts vnts vnts dev dev"
+    " weak weak weak weak vnts vnts vnts vnts vnts vnts dev dev"
+    " weak weak weak weak vnts vnts vnts vnts vnts vnts dev dev"
+    " prdct prdct prdct prdct prdct  last last last last last last last"
+    " prdct prdct prdct prdct prdct last last last last last last last"
+    " prdct prdct prdct prdct prdct last last last last last last last"
+    ;
+    gap: 8px;
+    width: 800px;
+    height: 600px;
+    margin: 15px auto;
+    /* border: 1px solid var(--color-primary);  */
+    border-radius: 5px;
+    background: var(--color-primary);
+    /* box-shadow: var(--color-shadows); */
+}
+.container div {
+    border-radius: 5px;
+    background: var(--color-secundary);
+}
+
+.item_1{
+    background: red;
+    grid-area: menu;
+}
+.item_2{
+    grid-area: noti;
+    background: blue;
+}
+.item_3 {
+    grid-area: vnts;
+    background: orange;
+}
+.item_4 {
+    grid-area: blnc;
+    background: pink;
+}
+.item_5 {
+    background: salmon;
+    grid-area: weak;
+}
+.item_6 {
+    background: darkblue;
+    grid-area: dev;
+}
+.item_7 {
+    background: darkgreen;
+    grid-area: prdct;
+}
+.item_8 {
+    background: darkgoldenrod;
+    grid-area: last;
+}
+@media (width < 600px) {
+    .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "menu"
+        "noti"
+        "vnts"
+        "blnc"
+        "weak"
+        "dev"
+        "prdct"
+        "last"
+        "."
+        ;
+    }
+}
