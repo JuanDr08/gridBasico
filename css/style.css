@@ -17,7 +17,7 @@ body {
     " menu menu menu menu menu menu menu menu menu menu menu menu "
     " noti noti noti noti vnts vnts vnts vnts vnts vnts blnc blnc"
     " noti noti noti noti vnts vnts vnts vnts vnts vnts blnc blnc"
-    " weak weak weak weak vnts vnts vnts vnts vnts vnts dev dev"
+    " weak weak weak weak vnts vnts vnts vnts vnts vnts blnc blnc"
     " weak weak weak weak vnts vnts vnts vnts vnts vnts dev dev"
     " weak weak weak weak vnts vnts vnts vnts vnts vnts dev dev"
     " prdct prdct prdct prdct prdct  last last last last last last last"
@@ -33,41 +33,71 @@ body {
     background: var(--color-primary);
     /* box-shadow: var(--color-shadows); */
 }
-.container div {
-    border-radius: 5px;
-    background: var(--color-secundary);
-}
+
 
 .item_1{
-    background: red;
     grid-area: menu;
+    display: flex;
+}
+.item_1 div:first-child {
+    background: var(--color-secundary);
+    width: 50%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.item_1 div:last-child {
+    background: linear-gradient(90deg,#79d2fa, #d1f729);
+    width: 50%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .item_2{
     grid-area: noti;
-    background: blue;
+    background: #87d8f9;
 }
 .item_3 {
     grid-area: vnts;
-    background: orange;
+    background: var(--color-secundary);
 }
 .item_4 {
     grid-area: blnc;
-    background: pink;
+    background: var(--color-secundary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 5%;
+    border-radius: 10%;
+}
+.item_4 div:first-child,
+.item_4 div:nth-child(2),
+.item_4 div:last-child{
+    height: 30%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.item_4 div:nth-child(2) {
+    background: #aef7ae;
+}
+
+.item_4 div:nth-child(2) p, h4 {
+    font-size: 0.7rem;
 }
 .item_5 {
-    background: salmon;
+    background: var(--color-secundary);
     grid-area: weak;
 }
 .item_6 {
-    background: darkblue;
+    background: #d7f065;
     grid-area: dev;
 }
 .item_7 {
-    background: darkgreen;
+    background: var(--color-secundary);
     grid-area: prdct;
 }
 .item_8 {
-    background: darkgoldenrod;
+    background: var(--color-secundary);
     grid-area: last;
 }
 @media (width < 600px) {
@@ -85,5 +115,6 @@ body {
         "last"
         "."
         ;
+        height: 100vh;
     }
 }
