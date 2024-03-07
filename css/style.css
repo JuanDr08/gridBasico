@@ -48,6 +48,38 @@ body {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
+.item_1 div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.ov ul {
+    display: flex;
+    list-style: none;
+    text-transform: capitalize;
+    gap: 2vw;
+    margin-left: 2vw;
+}
+.ov ul li:first-child a {
+    font-weight: bolder;
+}
+.inp {
+    margin-right: 1vw;
+}
+.inp input {
+    background: var(--color-primary);
+    border: 1px solid rgba(128, 128, 128, 0.185);
+    padding: 10px;
+    border-radius: 5px;
+}
+.inp input::placeholder {
+    color: black;
+    font-weight: bolder;
+}
 .item_1 div:last-child {
     background: linear-gradient(90deg,#79d2fa, #d1f729);
     width: 50%;
