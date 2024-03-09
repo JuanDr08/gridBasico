@@ -233,12 +233,39 @@ body {
     width: 100%;
 }
 
-
-
 .item_6 {
     background: #d7f065;
     grid-area: dev;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
+.item_6 p{
+    font-size: 12px;
+}
+
+.item_6 button{
+    font-size: 10px;
+    height: 20%;
+    width: 50%;
+    margin: 10px 0;
+}
+
+.img_item_6{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item_6 i, .img_item_6 > i{
+    font-size: 35px;
+    background: white;
+    border-radius: 100%;
+}
+.img_item_6 > div i:last-child{
+    margin-left: -20px;
+}
+
+
 .item_7 {
     background: var(--color-secundary);
     grid-area: prdct;
