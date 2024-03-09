@@ -111,7 +111,10 @@ body {
     justify-content: space-between;
     padding: 20px 30px;
 }
-
+.p_title {
+    font-weight: bolder;
+    text-transform: capitalize;
+}
 .hora{
     display: flex;
     justify-content: space-between;
@@ -132,10 +135,6 @@ body {
 .perfiles2 > div i:last-child {
     margin-left: -20px;
 }
-
-
-
-
 
 .item_3{
     background: var(--color-secundary);
@@ -164,10 +163,6 @@ body {
 .profit{
     color: var(--color-ternary);
 }
-
-
-
-
 
 .item_4 {
     grid-area: blnc;
@@ -205,7 +200,41 @@ body {
 .item_5 {
     background: var(--color-secundary);
     grid-area: weak;
+    padding: 0 20px;
 }
+
+.title_left_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.title_left_box p {
+    font-weight: bolder;
+}
+.perfiles_left_box{
+    font-size: 35px;
+}
+.bx-columns {
+    background: var(--color-ternary);
+    border-radius: 50%;
+    
+}
+.bxs-right-top-arrow-circle {
+    color: var(--color-quinto);
+    background: black;
+    border-radius: 50%;
+}
+.grafica_left_box {
+    margin-top: 40px;
+}
+
+.grafica_left_box img{
+    width: 100%;
+}
+
+
+
 .item_6 {
     background: #d7f065;
     grid-area: dev;
