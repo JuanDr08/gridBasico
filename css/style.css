@@ -265,11 +265,57 @@ body {
     margin-left: -20px;
 }
 
-
 .item_7 {
     background: var(--color-secundary);
     grid-area: prdct;
+    padding: 15px;
 }
+
+.item_7 > *{
+    margin: 10px;
+}
+
+.item_7 i{
+    font-size: 50px;
+}
+
+.header_box_7{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button1, .button2{
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.button1 {
+    background-color: #FCFE91;
+}
+.button2 {
+    background-color: var(--color-ternary);
+}
+
+.imgs_box_7{
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgs_izq_der_box_7 i{
+    background-color: var(--color-primary);
+    border-radius: 100%;
+}
+
+.imgs_izq_der_box_7 i:nth-child(2),
+.imgs_izq_der_box_7 i:last-child {
+    margin-left: -20px;
+}
+
+
+
+
+
 .item_8 {
     background: var(--color-secundary);
     grid-area: last;
